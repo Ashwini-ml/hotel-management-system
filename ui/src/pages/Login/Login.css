@@ -1,0 +1,270 @@
+.login-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 45px 7%;
+  background: url("/hotel.jpeg") center center / cover no-repeat !important;
+}
+.login-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 31, 35, 0.62) 0%,
+    rgba(10, 31, 35, 0.25) 52%,
+    rgba(10, 31, 35, 0.45) 100%
+  );
+  pointer-events: none;
+}
+.login-hero {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  width: auto;
+  min-height: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+  color: white;
+  background: transparent !important;
+}
+.hero-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #fff;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+.hero-brand svg {
+  color: #e4c58d;
+}
+.hero-copy {
+  max-width: 540px;
+  margin: auto 0;
+  padding: 35px 0;
+}
+.hero-copy p {
+  margin-bottom: 22px;
+  color: #f0d19a;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.hero-copy h1 {
+  margin: 0 0 22px;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(38px, 4.2vw, 58px);
+  font-weight: 400;
+  line-height: 1.15;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.45);
+}
+.hero-copy span {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.8;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+.login-panel {
+  position: relative;
+  z-index: 2;
+  flex: 0 0 410px;
+  width: 410px;
+  min-height: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent !important;
+}
+.login-card {
+  width: 100%;
+  padding: 38px 34px;
+  display: flex;
+  flex-direction: column;
+  background: #fffdf8 !important;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  box-shadow: 0 24px 65px rgba(0, 0, 0, 0.32);
+}
+.login-card > svg {
+  color: #347f78;
+  margin-bottom: 14px;
+}
+.login-card h1 {
+  color: #17343b;
+  font-size: 32px;
+  font-family: Georgia, serif;
+  font-weight: 500;
+}
+.login-card label:not(.remember-row) {
+  color: #263f43;
+  font-size: 13px;
+  font-weight: 600;
+}
+.login-card > input,
+.password-field input {
+  background: #fff;
+  border: 1px solid #dce4df;
+  border-radius: 8px;
+}
+.login-card > input:focus,
+.password-field input:focus {
+  border-color: #347f78;
+  box-shadow: 0 0 0 3px rgba(52, 127, 120, 0.12);
+}
+.remember-row {
+  color: #60736e;
+}
+.primary-button {
+  background: #173f43;
+  border-radius: 8px;
+  min-height: 49px;
+  box-shadow: none;
+}
+.primary-button:hover {
+  background: #347f78;
+}
+.text-button {
+  color: #347f78;
+}
+@media (max-width: 800px) {
+  .login-page {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+  .login-hero {
+    flex: none;
+    width: 100%;
+    padding: 10px;
+  }
+  .hero-copy {
+    padding: 25px 0;
+  }
+  .hero-copy h1 {
+    font-size: 36px;
+  }
+  .login-panel {
+    flex: none;
+    width: 100%;
+    max-width: 410px;
+  }
+  .login-card {
+    padding: 30px 25px;
+  }
+}
+.login-page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 45px 6%;
+  background-image: url("/hotel.jpeg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.login-hero {
+  flex: 1;
+  width: auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  background: transparent !important;
+}
+.hero-brand,
+.hero-copy {
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.65);
+}
+.hero-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: Georgia, serif;
+  font-size: 24px;
+}
+.hero-brand svg {
+  color: #e0bd7c;
+}
+.hero-copy {
+  max-width: 520px;
+  margin: auto 0;
+  padding: 40px 0;
+}
+.hero-copy p {
+  color: #f0d39a;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+.hero-copy h1 {
+  color: white;
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 4.5vw, 62px);
+  font-weight: 400;
+  line-height: 1.15;
+}
+.hero-copy span {
+  color: white;
+  font-size: 15px;
+  line-height: 1.8;
+}
+.login-panel {
+  flex: 0 0 420px;
+  width: 420px;
+  min-height: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent !important;
+}
+.login-card {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: 16px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.28);
+}
+@media (max-width: 750px) {
+  .login-page {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 25px 16px;
+  }
+  .login-hero {
+    flex: none;
+    width: 100%;
+    min-height: 150px;
+    padding: 10px;
+  }
+  .hero-copy {
+    margin: 15px 0;
+    padding: 10px 0;
+  }
+  .hero-copy h1 {
+    font-size: 34px;
+  }
+  .login-panel {
+    flex: none;
+    width: 100%;
+    max-width: 420px;
+  }
+}

@@ -1,0 +1,208 @@
+
+.sidebar {
+  width: 265px;
+  min-width: 265px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  color: #fff;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(16, 48, 49, 0.88),
+      rgba(13, 38, 41, 0.96)
+    ),
+    url("/Lobby.jpg") center / cover no-repeat;
+  box-shadow: 5px 0 22px rgba(20, 43, 42, 0.12);
+  z-index: 100;
+}
+
+.sidebar-content {
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.sidebar-brand {
+  flex-shrink: 0;
+  min-height: 112px;
+  padding: 20px 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+.hotel-brand-icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  color: #e0c18a;
+}
+
+.sidebar-brand h2 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  color: #fff;
+}
+
+.sidebar-brand span {
+  margin-top: 6px;
+  color: #ddc99e;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+
+.sidebar-divider {
+  height: 1px;
+  flex-shrink: 0;
+  background: rgba(255,255,255,.08);
+}
+
+
+.sidebar-nav {
+  flex: 1;
+  min-height: 0;
+  padding: 16px 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.sidebar-nav .nav-link {
+  min-height: 43px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 0 13px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #e4ebe7;
+  text-decoration: none;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all .2s ease;
+}
+
+.sidebar-nav .nav-link svg {
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+  color: #d8bd87;
+}
+
+.sidebar-nav .nav-link span {
+  white-space: nowrap;
+}
+
+.sidebar-nav .nav-link:hover {
+  background: rgba(255,255,255,.13);
+  color: #fff;
+  border-color: rgba(255,255,255,.1);
+  transform: translateX(3px);
+}
+
+
+.sidebar-nav .nav-link.active {
+  background: linear-gradient(
+    100deg,
+    rgba(197,163,106,.34),
+    rgba(197,163,106,.12)
+  );
+  border-color: rgba(219,190,135,.4);
+  color: #fff;
+  box-shadow: inset 3px 0 #d3b477;
+}
+
+.sidebar-nav .nav-link.active svg {
+  color: #f0d49d;
+}
+
+
+.sidebar-bottom {
+  flex-shrink: 0;
+  padding: 13px;
+  border-top: 1px solid rgba(255,255,255,.16);
+}
+
+.sidebar-logout {
+  width: 100%;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 0 13px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: rgba(150, 73, 63, .16);
+  color: #f2d8d1;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.sidebar-logout svg {
+  width: 19px;
+  height: 19px;
+}
+
+.sidebar-logout:hover {
+  background: rgba(180, 78, 65, .35);
+  color: #fff;
+}
+
+
+.sidebar-nav::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sidebar-nav::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-nav::-webkit-scrollbar-thumb {
+  background: rgba(220,205,170,.4);
+  border-radius: 10px;
+}
+
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: 235px;
+    min-width: 235px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    width: 215px;
+    min-width: 215px;
+  }
+
+  .sidebar-brand h2 {
+    font-size: 18px;
+  }
+
+  .sidebar-nav .nav-link {
+    font-size: 12px;
+  }
+}

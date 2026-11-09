@@ -1,0 +1,42 @@
+React / Node
+
+node_modules/
+ui/node_modules/
+ui/dist/
+dist/
+
+ASP.NET Core
+
+**/bin/
+**/obj/
+.vs/
+*.user
+*.suo
+
+Environment and secrets
+
+.env
+.env.*
+!.env.example
+appsettings*.json
+!**/appsettings.example.json
+secrets.json
+
+Logs
+
+*.log
+logs/
+
+Operating system
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+IDE
+
+.idea/
+.vscode/
+
+# Uploaded guest photographs
+api/wwwroot/uploads/guests/
